@@ -87,12 +87,12 @@ const Index = () => {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+      <section id="top" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-navy-deep">
+        <div className="absolute inset-0">
           <img src={heroBg} alt="" className="w-full h-full object-cover" width={1920} height={1080} />
           <div className="absolute inset-0 bg-gradient-overlay" />
         </div>
-        <div className="container-elegant py-24 md:py-32 text-primary-foreground animate-fade-up">
+        <div className="container-elegant relative z-10 py-24 md:py-32 text-primary-foreground animate-fade-up">
           <p className="eyebrow text-sand mb-6">
             <span className="divider-line bg-sand" />Eleições 2026
           </p>
