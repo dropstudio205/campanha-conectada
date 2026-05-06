@@ -35,7 +35,7 @@ const benefits = [
   { icon: HeartHandshake, title: "Captação de contatos e doações", desc: "Receba mensagens, cadastros e apoios de forma direta e organizada." },
   { icon: ShieldCheck, title: "Credibilidade e seriedade", desc: "Um site próprio transmite a imagem institucional que sua campanha merece." },
   { icon: Award, title: "Diferenciação dos concorrentes", desc: "Saia na frente dos adversários que ainda dependem só das redes sociais." },
-  { icon: Smartphone, title: "Perfeito no celular", desc: "Mais de 80% dos eleitores acessam pelo celular — seu site é otimizado para isso." },
+  { icon: Smartphone, title: "Perfeito no celular", desc: "Mais de 80% dos eleitores acessam pelo celular. Seu site é otimizado para isso." },
 ];
 
 const layouts = [
@@ -67,7 +67,7 @@ const Index = () => {
       <header className="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-background/80 border-b border-border/50">
         <div className="container-elegant flex h-16 items-center justify-between">
           <a href="#top" className="font-serif text-lg font-bold text-primary">
-            Presença <span className="text-accent">Digital</span>
+            Vel<span className="text-accent">Dec</span>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#beneficios" className="hover:text-accent transition-smooth">Benefícios</a>
@@ -94,14 +94,14 @@ const Index = () => {
         </div>
         <div className="container-elegant relative z-10 py-24 md:py-32 text-primary-foreground animate-fade-up">
           <p className="eyebrow text-sand mb-6">
-            <span className="divider-line bg-sand" />Eleições 2026
+            <span className="divider-line bg-sand" />Presença Digital | Eleições 2026
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl leading-[1.05] font-bold max-w-4xl text-balance">
             Sua campanha merece <em className="text-sand not-italic">ser vista</em> por todos.
           </h1>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-sand/90 leading-relaxed">
             Tenha uma landing page profissional, rápida e elegante que apresenta sua proposta,
-            trajetória e contato diretamente para o eleitor — em qualquer dispositivo.
+            trajetória e contato diretamente para o eleitor que funciona em qualquer dispositivo.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
@@ -184,7 +184,7 @@ const Index = () => {
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Galeria de fotos, vídeos de campanha, depoimentos, números da sua trajetória, propostas
-              detalhadas — tudo isso em layouts elegantes e profissionais, totalmente adaptáveis.
+              detalhadas, tudo isso em layouts elegantes e profissionais, totalmente adaptáveis.
             </p>
           </div>
 
@@ -278,7 +278,7 @@ const Index = () => {
             <h2 className="mt-6 font-serif text-4xl md:text-6xl font-bold leading-tight">
               Plano Vitalício
             </h2>
-            <p className="mt-4 text-sand/90">Oferta por tempo limitado — garanta sua presença digital antes da campanha começar.</p>
+            <p className="mt-4 text-sand/90">Oferta por tempo limitado! Garanta sua presença digital antes da campanha começar.</p>
           </div>
 
           <div className="mt-14 max-w-2xl mx-auto bg-navy-deep/40 backdrop-blur-sm border border-sand-light/15 p-8 md:p-12 shadow-elegant">
