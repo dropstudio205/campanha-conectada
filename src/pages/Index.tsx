@@ -5,6 +5,10 @@ import layout2 from "@/assets/layout2.jpg";
 import layout3 from "@/assets/layout3.jpg";
 import layout4 from "@/assets/layout4.jpg";
 import FloatingButtons from "@/components/FloatingButtons";
+import lay1 from "@/assets/lay1.jpg";
+import lay2 from "@/assets/lay2.jpg";
+import lay3 from "@/assets/lay3.jpg";
+import lay4 from "@/assets/lay4.jpg";
 import { Button } from "@/components/ui/button";
 import {
   Award,
@@ -54,10 +58,21 @@ const planFeatures = [
 ];
 
 const portfolio = [
-  { img: layout1, name: "Campanha Estadual 2024", url: "#" },
-  { img: layout3, name: "Vereador Municipal", url: "#" },
-  { img: layout4, name: "Deputado Federal", url: "#" },
-  { img: layout2, name: "Pré-candidatura 2026", url: "#" },
+  { img: lay1, name: "Assessoria Pulicarpo", url: "https://assessoriapulicarpo.com/" },
+  { img: lay2, name: "Retífica Mais", url: "https://retificamais.site/" },
+  { img: lay3, name: "Porto Betarello", url: "https://www.portobetarello.com/" },
+  { img: lay4, name: "Expopet Design", url: "https://expopet-proj-uwlg.vercel.app/index.html" },
+];
+
+const bonuses = [
+  {
+    title: "Bônus 1: QR Code Personalizado",
+    desc: "Receba um QR Code exclusivo para colocar nos seus materiais de campanha e cartões de visita. Também, botão de contato direto no seu site para o eleitor falar com você em um clique.",
+  },
+  {
+    title: "Bônus 2: Domínio e Hospedagem",
+    desc: "O pacote inclui domínio (.site) e hospedagem gratuita por 1 ano, além de um site otimizado para SEO e preparado para gerar mais visibilidade online.",
+  },
 ];
 
 const Index = () => {
@@ -256,13 +271,13 @@ const Index = () => {
           </div>
 
           <div className="mt-14 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[1, 2].map((i) => (
-              <div key={i} className="aspect-[4/3] bg-card border border-border shadow-card flex flex-col items-center justify-center text-center p-10">
-                <Star className="h-10 w-10 text-accent" />
-                <p className="mt-4 font-serif text-xl font-semibold text-primary">Bônus #{i}</p>
-                <p className="mt-2 text-sm text-muted-foreground">Espaço reservado para imagem do bônus exclusivo.</p>
-              </div>
-            ))}
+            {bonuses.map((bonus, i) => (
+  <div key={i} className="aspect-[4/3] bg-card border border-border shadow-card flex flex-col items-center justify-center text-center p-10">
+    <Star className="h-10 w-10 text-accent" />
+    <p className="mt-4 font-serif text-xl font-semibold text-primary">{bonus.title}</p>
+    <p className="mt-2 text-sm text-muted-foreground">{bonus.desc}</p>
+  </div>
+))}
           </div>
         </div>
       </section>
@@ -317,7 +332,7 @@ const Index = () => {
               <p className="eyebrow"><span className="divider-line" />Portfólio</p>
               <h2 className="mt-4 font-serif text-3xl md:text-5xl font-bold text-primary leading-tight">Projetos já entregues</h2>
             </div>
-            <p className="text-muted-foreground max-w-md">Cada projeto foi desenhado sob medida para a estratégia e imagem do candidato.</p>
+            <p className="text-muted-foreground max-w-md">Cada projeto é desenvolvido de forma personalizada, de acordo com a identidade e os objetivos de cada cliente.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -378,7 +393,7 @@ const Index = () => {
       <footer className="py-10 bg-navy-deep text-sand/60 text-center text-sm">
         <div className="container-elegant">
           <p className="font-serif text-lg text-sand mb-2">Presença Digital para Políticos</p>
-          <p>© {new Date().getFullYear()} — Sites e landing pages para campanhas eleitorais.</p>
+          <p>VelDec © {new Date().getFullYear()} — Sites e landing pages para campanhas eleitorais.</p>
         </div>
       </footer>
 
